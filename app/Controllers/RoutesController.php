@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\GameModel;
 
 class RoutesController extends BaseController
 {
@@ -28,6 +29,10 @@ class RoutesController extends BaseController
      */
     public function LoadingContent()
     {
+        if(!isset($_SESSION['packs'])){
+            $packs = new GameModel;
+            $_SESSION['packs'] = $packs->StartGame();
+        }
         $this->view->render($this->content);
     }
 }

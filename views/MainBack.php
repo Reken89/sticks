@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php
-        
+            var_dump($_SESSION['packs']);        
         ?>
         <form id="FormOne" method="post">
             <img src="assets/img/stick.jpg" />
