@@ -5,37 +5,34 @@
         <title>Игра палочки</title>
     </head>
     <body>
-        <?php
-            var_dump($_SESSION['packs']);        
-        ?>
         <form id="FormOne" method="post">
-            <img src="assets/img/stick.jpg" />
-            <img src="assets/img/stick.jpg" />
-            <img src="assets/img/stick.jpg" />
+            <?php
+                for ($a = 1; $a <= $_SESSION['packs']['OnePack']; $a++){
+                    ?> <img src="assets/img/stick.jpg" /> <?php
+                }
+            ?>
             </br>
             <input type="text" name="FormOne" required placeholder="Количество палочек">
             <button type="button" id="FormOne" class="btn btn-primary">Взять</button>
         </form>
         </br>
         <form id="FormTwo" method="post">
-            <img src="assets/img/stick.jpg" />
-            <img src="assets/img/stick.jpg" />
-            <img src="assets/img/stick.jpg" />
-            <img src="assets/img/stick.jpg" />
-            <img src="assets/img/stick.jpg" />
+            <?php
+                for ($a = 1; $a <= $_SESSION['packs']['TwoPack']; $a++){
+                    ?> <img src="assets/img/stick.jpg" /> <?php
+                }
+            ?>
             </br>
             <input type="text" name="FormTwo" required placeholder="Количество палочек">
             <button type="button" id="FormTwo" class="btn btn-primary">Взять</button>
         </form>
         </br>
         <form id="FormThree" method="post">
-            <img src="assets/img/stick.jpg" />
-            <img src="assets/img/stick.jpg" />
-            <img src="assets/img/stick.jpg" />
-            <img src="assets/img/stick.jpg" />
-            <img src="assets/img/stick.jpg" />
-            <img src="assets/img/stick.jpg" />
-            <img src="assets/img/stick.jpg" />
+            <?php
+                for ($a = 1; $a <= $_SESSION['packs']['ThreePack']; $a++){
+                    ?> <img src="assets/img/stick.jpg" /> <?php
+                }
+            ?>
             </br>
             <input type="text" name="FormThree" required placeholder="Количество палочек">
             <button type="button" id="FormThree" class="btn btn-primary">Взять</button>
