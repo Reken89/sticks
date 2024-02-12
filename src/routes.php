@@ -12,3 +12,7 @@ if ($route[2] == "index" || $route[2] == ""){
     $address->Index();
 }
 
+if ($route[2] == "back"){
+    $address = new RoutesController;
+    $address->LoadingContent();
+}
