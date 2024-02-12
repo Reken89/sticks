@@ -35,5 +35,21 @@ class RoutesController extends BaseController
         }
         $this->view->render($this->content);
     }
+    
+    /**
+     * Запускаем работу приложения
+     *
+     * @param 
+     * @return render()
+     */
+    public function UpdateContent()
+    {
+        if(isset($_POST['sticks'])){
+            $sticks = new GameModel;
+            $result = $sticks->CheckingSticks($_POST['sticks'], $_POST['variant']);
+            var_dump($result);
+        }
+
+    }
 }
 

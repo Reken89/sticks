@@ -12,8 +12,9 @@
                 }
             ?>
             </br>
-            <input type="text" name="FormOne" required placeholder="Количество палочек">
-            <button type="button" id="FormOne" class="btn btn-primary">Взять</button>
+            <input type='hidden' name='variant' value='one'>
+            <input type="number" name="sticks" required placeholder="Количество палочек">
+            <button type="button" id="ButtonOne" class="btn btn-primary">Взять</button>
         </form>
         </br>
         <form id="FormTwo" method="post">
@@ -23,8 +24,9 @@
                 }
             ?>
             </br>
-            <input type="text" name="FormTwo" required placeholder="Количество палочек">
-            <button type="button" id="FormTwo" class="btn btn-primary">Взять</button>
+            <input type='hidden' name='variant' value='two'>
+            <input type="number" name="sticks" required placeholder="Количество палочек">
+            <button type="button" id="ButtonTwo" class="btn btn-primary">Взять</button>
         </form>
         </br>
         <form id="FormThree" method="post">
@@ -34,8 +36,9 @@
                 }
             ?>
             </br>
-            <input type="text" name="FormThree" required placeholder="Количество палочек">
-            <button type="button" id="FormThree" class="btn btn-primary">Взять</button>
+            <input type='hidden' name='variant' value='three'>
+            <input type="number" name="sticks" required placeholder="Количество палочек">
+            <button type="button" id="ButtonThree" class="btn btn-primary">Взять</button>
         </form>
     </body>
 </html>

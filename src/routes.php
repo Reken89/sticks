@@ -16,3 +16,8 @@ if ($route[2] == "back"){
     $address = new RoutesController;
     $address->LoadingContent();
 }
+
+if ($route[2] == "logics"){
+    $address = new RoutesController;
+    $address->UpdateContent();
+}
