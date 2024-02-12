@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 
-class IndexController extends BaseController
+class RoutesController extends BaseController
 {
     private $page = "/views/main.html";
     
