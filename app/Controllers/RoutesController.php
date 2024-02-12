@@ -44,11 +44,14 @@ class RoutesController extends BaseController
      */
     public function UpdateContent()
     {
-        if(isset($_POST['sticks'])){
-            $sticks = new GameModel;
-            $result = $sticks->CheckingSticks($_POST['sticks'], $_POST['variant']);
-            var_dump($result);
+        $sticks = $_POST['sticks'];
+        if($sticks){
+            $game = new GameModel;
+            $checking = $game->CheckingSticks($_POST['sticks'], $_POST['variant']);
         }
+        if($checking){
+            $game->UpdateSticks($sticks, $_POST['variant']);
+        }      
 
     }
 }

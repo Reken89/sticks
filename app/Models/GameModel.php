@@ -43,5 +43,24 @@ class GameModel
             return $sticks > 0 && $sticks <= $_SESSION['packs']['ThreePack'] ? true : false;   
         }
     }
+    
+    /**
+     * Обновляем число палочек в пачке
+     *
+     * @param int $sticks, string $variant
+     * @return
+     */
+    public function UpdateSticks(int $sticks, string $variant)
+    {
+        if($variant == "one"){
+            $_SESSION['packs']['OnePack'] = $_SESSION['packs']['OnePack'] - $sticks;
+        }
+        if($variant == "two"){
+            $_SESSION['packs']['TwoPack'] = $_SESSION['packs']['TwoPack'] - $sticks;
+        }
+        if($variant == "three"){
+            $_SESSION['packs']['ThreePack'] = $_SESSION['packs']['ThreePack'] - $sticks;
+        }
+    }
 }
 
