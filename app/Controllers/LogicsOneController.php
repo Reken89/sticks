@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use App\Models\LogicsModel;
+use App\Models\LogicsOneModel;
 
 class LogicsOneController extends BaseController
 {
@@ -18,7 +18,7 @@ class LogicsOneController extends BaseController
     public function SelectVariant()
     {
         $packs = $_SESSION['packs'];
-        $logics = new LogicsModel;
+        $logics = new LogicsOneModel;
         
         if($packs['OnePack'] == 0 && $packs['TwoPack'] == 5 && $packs['ThreePack'] == 7){
             $logics->ActionOne();
