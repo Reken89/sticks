@@ -19,7 +19,7 @@
         //Выполняем действие, при нажатии на кнопку
         $(document).on('click', '#ButtonOne', function(){           
             $.ajax({
-                url:"/sticks/logics",  
+                url:"/sticks/action",  
                 method:"post",
                 data:$('#FormOne').serialize(),
                 dataType:"text", 
@@ -27,13 +27,25 @@
                     //alert(data);
                     fetch_data();
                 } 
-            })                        
+            })  
+            
+            function logics() {
+                $.ajax({
+                    url:"/sticks/logics",  
+                    method:"post",
+                    success:function(data){
+                        //alert(data);
+                        fetch_data();
+                    } 
+                }) 
+            }
+            let timeout = setTimeout(logics, 800);
         })
         
         //Выполняем действие, при нажатии на кнопку
         $(document).on('click', '#ButtonTwo', function(){           
             $.ajax({
-                url:"/sticks/logics",  
+                url:"/sticks/action",  
                 method:"post",
                 data:$('#FormTwo').serialize(),
                 dataType:"text", 
@@ -41,13 +53,25 @@
                     //alert(data);
                     fetch_data();
                 } 
-            })                        
+            }) 
+            
+            function logics() {
+                $.ajax({
+                    url:"/sticks/logics",  
+                    method:"post",
+                    success:function(data){
+                        //alert(data);
+                        fetch_data();
+                    } 
+                }) 
+            }
+            let timeout = setTimeout(logics, 800);
         })
         
         //Выполняем действие, при нажатии на кнопку
         $(document).on('click', '#ButtonThree', function(){           
             $.ajax({
-                url:"/sticks/logics",  
+                url:"/sticks/action",  
                 method:"post",
                 data:$('#FormThree').serialize(),
                 dataType:"text", 
@@ -55,7 +79,19 @@
                     //alert(data);
                     fetch_data();
                 } 
-            })                        
+            }) 
+            
+            function logics() {
+                $.ajax({
+                    url:"/sticks/logics",  
+                    method:"post",
+                    success:function(data){
+                        //alert(data);
+                        fetch_data();
+                    } 
+                }) 
+            }
+            let timeout = setTimeout(logics, 800);
         })
     });
 </script>
