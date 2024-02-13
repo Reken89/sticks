@@ -1,7 +1,7 @@
 <?php
 
 use App\Controllers\RoutesController;
-use App\Controllers\LogicsController;
+use App\Controllers\LogicsOneController;
 
 //Запускаем разбор адресной строки
 //Получаем нужное нам значение
@@ -24,6 +24,6 @@ if ($route[2] == "action"){
 }
 
 if ($route[2] == "logics"){
-    $address = new LogicsController;
+    $address = new LogicsOneController;
     $address->SelectVariant();
 }
