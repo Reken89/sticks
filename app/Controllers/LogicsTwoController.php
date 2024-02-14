@@ -104,6 +104,34 @@ class LogicsTwoController extends BaseController
         if($packs['OnePack'] == 2 && $packs['TwoPack'] == 5 && $packs['ThreePack'] == 0){
             $logics->ActionEleven();
         }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 5 && $packs['ThreePack'] == 4){
+            $logics->ActionFourteen();
+        }
+        
+        if($packs['OnePack'] == 0 && $packs['TwoPack'] == 5 && $packs['ThreePack'] == 4){
+            $logics->ActionFifteen();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 4 && $packs['ThreePack'] == 4){
+            $logics->ActionFifteen();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 3 && $packs['ThreePack'] == 4){
+            $logics->ActionTen();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 2 && $packs['ThreePack'] == 4){
+            $logics->ActionEleven();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 1 && $packs['ThreePack'] == 4){
+            $logics->ActionTwelve();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 0 && $packs['ThreePack'] == 4){
+            $logics->ActionThirteen();
+        }
     }
 }
 
