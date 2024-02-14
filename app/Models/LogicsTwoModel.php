@@ -126,6 +126,7 @@ class LogicsTwoModel
         $_SESSION['packs']['OnePack'] = 1;
         $_SESSION['packs']['TwoPack'] = 3;
         $_SESSION['packs']['ThreePack'] = 2;
+        //Выводим компьютер на победу!
     }
     
     public function ActionEighteen()
@@ -133,6 +134,7 @@ class LogicsTwoModel
         $_SESSION['packs']['OnePack'] = 1;
         $_SESSION['packs']['TwoPack'] = 2;
         $_SESSION['packs']['ThreePack'] = 3;
+        //Выводим компьютер на победу!
     }
     
     public function ActionNineteen()
@@ -140,6 +142,7 @@ class LogicsTwoModel
         $_SESSION['packs']['OnePack'] = 1;
         $_SESSION['packs']['TwoPack'] = 1;
         $_SESSION['packs']['ThreePack'] = 1;
+        //Выводим компьютер на победу!
     }
        
 }
