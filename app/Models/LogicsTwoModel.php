@@ -29,14 +29,6 @@ class LogicsTwoModel
         //Победа Компьютера!
     }
     
-    public function ActionThree()
-    {
-        $_SESSION['packs']['OnePack'] = 0;
-        $_SESSION['packs']['TwoPack'] = 0;
-        $_SESSION['packs']['ThreePack'] = 1;
-        //Победа Компьютера!
-    }
-    
     public function ActionFour()
     {
         $_SESSION['packs']['OnePack'] = 1;
@@ -66,14 +58,7 @@ class LogicsTwoModel
         $_SESSION['packs']['ThreePack'] = 5;
         //Выводим компьютер на победу!
     }
-    
-    public function ActionEight()
-    {
-        $_SESSION['packs']['OnePack'] = 1;
-        $_SESSION['packs']['TwoPack'] = 4;
-        $_SESSION['packs']['ThreePack'] = 6;
-    }
-    
+        
     public function ActionNine()
     {
         $_SESSION['packs']['OnePack'] = 2;
@@ -110,53 +95,6 @@ class LogicsTwoModel
         $_SESSION['packs']['OnePack'] = 2;
         $_SESSION['packs']['TwoPack'] = 0;
         $_SESSION['packs']['ThreePack'] = 2;
-        //Выводим компьютер на победу!
-    }
-    
-    public function ActionFourteen()
-    {
-        $_SESSION['packs']['OnePack'] = 0;
-        $_SESSION['packs']['TwoPack'] = 5;
-        $_SESSION['packs']['ThreePack'] = 5;
-        //Выводим компьютер на победу!
-    }
-    
-    public function ActionFifteen()
-    {
-        $_SESSION['packs']['OnePack'] = 1;
-        $_SESSION['packs']['TwoPack'] = 5;
-        $_SESSION['packs']['ThreePack'] = 4;
-    }
-    
-    public function ActionSixteen()
-    {
-        $_SESSION['packs']['OnePack'] = 2;
-        $_SESSION['packs']['TwoPack'] = 1;
-        $_SESSION['packs']['ThreePack'] = 3;
-        //Выводим компьютер на победу!
-    }
-    
-    public function ActionSeventeen()
-    {
-        $_SESSION['packs']['OnePack'] = 2;
-        $_SESSION['packs']['TwoPack'] = 0;
-        $_SESSION['packs']['ThreePack'] = 2;
-        //Выводим компьютер на победу!
-    }
-    
-    public function ActionEighteen()
-    {
-        $_SESSION['packs']['OnePack'] = 2;
-        $_SESSION['packs']['TwoPack'] = 3;
-        $_SESSION['packs']['ThreePack'] = 1;
-        //Выводим компьютер на победу!
-    }
-    
-    public function ActionNineteen()
-    {
-        $_SESSION['packs']['OnePack'] = 2;
-        $_SESSION['packs']['TwoPack'] = 2;
-        $_SESSION['packs']['ThreePack'] = 0;
         //Выводим компьютер на победу!
     }
        

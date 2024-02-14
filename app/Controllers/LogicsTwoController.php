@@ -30,7 +30,7 @@ class LogicsTwoController extends BaseController
         }
         
         if($packs['OnePack'] == 0 && $packs['TwoPack'] == 0 && $packs['ThreePack'] == 3){
-            $logics->ActionThree();
+            $logics->ActionOne();
         }
         
         if($packs['OnePack'] == 3 && $packs['TwoPack'] == 0 && $packs['ThreePack'] == 0){
@@ -58,7 +58,7 @@ class LogicsTwoController extends BaseController
         if($packs['OnePack'] == 2 && $packs['TwoPack'] == 4 && $packs['ThreePack'] == 6){
             $random = rand(1, 2);
             if($random == 1){
-                $logics->ActionEight();
+                $logics->ActionFive();
             }
             if($random == 2){
                 $logics->ActionNine();
@@ -82,27 +82,27 @@ class LogicsTwoController extends BaseController
         }
         
         if($packs['OnePack'] == 2 && $packs['TwoPack'] == 5 && $packs['ThreePack'] == 5){
-            $logics->ActionFourteen();
+            $logics->ActionSeven();
         }
         
         if($packs['OnePack'] == 2 && $packs['TwoPack'] == 5 && $packs['ThreePack'] == 4){
-            $logics->ActionFifteen();
+            $logics->ActionSix();
         }
         
         if($packs['OnePack'] == 2 && $packs['TwoPack'] == 5 && $packs['ThreePack'] == 3){
-            $logics->ActionSixteen();
+            $logics->ActionTwelve();
         }
         
         if($packs['OnePack'] == 2 && $packs['TwoPack'] == 5 && $packs['ThreePack'] == 2){
-            $logics->ActionSeventeen();
+            $logics->ActionThirteen();
         }
         
         if($packs['OnePack'] == 2 && $packs['TwoPack'] == 5 && $packs['ThreePack'] == 1){
-            $logics->ActionEighteen();
+            $logics->ActionTen();
         }
         
         if($packs['OnePack'] == 2 && $packs['TwoPack'] == 5 && $packs['ThreePack'] == 0){
-            $logics->ActionNineteen();
+            $logics->ActionEleven();
         }
     }
 }
