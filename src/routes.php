@@ -24,6 +24,8 @@ if ($route[2] == "action"){
 }
 
 if ($route[2] == "logics"){
-    $address = new LogicsOneController;
-    $address->SelectVariant();
+    if($_SESSION['moves'] == 1){
+        $address = new LogicsOneController;
+        $address->SelectVariant();
+    }        
 }

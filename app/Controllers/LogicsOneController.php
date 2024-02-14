@@ -8,6 +8,7 @@ use App\Models\LogicsOneModel;
 class LogicsOneController extends BaseController
 {
     /**
+     * Логика после первого хода игрока
      * Выбираем какой вариант
      * логического действия (хода)
      * применить в конкретном случае

@@ -22,6 +22,21 @@ class GameModel
     }
     
     /**
+     * Подсчитываем количество 
+     * ходов игрока
+     *
+     * @param 
+     * @return 
+     */
+    public function CountMoves()
+    {
+        if(!isset($_SESSION['moves'])){
+            $_SESSION['moves'] = 0;
+        }  
+        $_SESSION['moves'] += 1;       
+    }
+    
+    /**
      * Проверяем введенное число
      * на соответствие,
      * должно быть не больше
