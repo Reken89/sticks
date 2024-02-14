@@ -113,6 +113,34 @@ class LogicsTwoModel
         $_SESSION['packs']['ThreePack'] = 4;
         //Выводим компьютер на победу!
     }
+    
+    public function ActionSixteen()
+    {
+        $_SESSION['packs']['OnePack'] = 1;
+        $_SESSION['packs']['TwoPack'] = 4;
+        $_SESSION['packs']['ThreePack'] = 5;
+    }
+    
+    public function ActionSeventeen()
+    {
+        $_SESSION['packs']['OnePack'] = 1;
+        $_SESSION['packs']['TwoPack'] = 3;
+        $_SESSION['packs']['ThreePack'] = 2;
+    }
+    
+    public function ActionEighteen()
+    {
+        $_SESSION['packs']['OnePack'] = 1;
+        $_SESSION['packs']['TwoPack'] = 2;
+        $_SESSION['packs']['ThreePack'] = 3;
+    }
+    
+    public function ActionNineteen()
+    {
+        $_SESSION['packs']['OnePack'] = 1;
+        $_SESSION['packs']['TwoPack'] = 1;
+        $_SESSION['packs']['ThreePack'] = 1;
+    }
        
 }
 
