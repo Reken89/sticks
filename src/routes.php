@@ -2,6 +2,7 @@
 
 use App\Controllers\RoutesController;
 use App\Controllers\LogicsOneController;
+use App\Controllers\LogicsTwoController;
 
 //Запускаем разбор адресной строки
 //Получаем нужное нам значение
@@ -27,5 +28,9 @@ if ($route[2] == "logics"){
     if($_SESSION['moves'] == 1){
         $address = new LogicsOneController;
         $address->SelectVariant();
-    }        
+    }  
+    if($_SESSION['moves'] == 2){
+        $address = new LogicsTwoController;
+        $address->SelectVariant();
+    }
 }
