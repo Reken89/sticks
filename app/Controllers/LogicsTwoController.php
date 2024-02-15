@@ -182,6 +182,102 @@ class LogicsTwoController extends BaseController
         if($packs['OnePack'] == 1 && $packs['TwoPack'] == 5 && $packs['ThreePack'] == 0){
             $logics->ActionFour();
         }
+        
+        if($packs['OnePack'] == 0 && $packs['TwoPack'] == 4 && $packs['ThreePack'] == 7){
+            $logics->ActionFifteen();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 3 && $packs['ThreePack'] == 7){
+            $logics->ActionTen();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 2 && $packs['ThreePack'] == 7){
+            $logics->ActionEleven();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 1 && $packs['ThreePack'] == 7){
+            $logics->ActionTwelve();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 0 && $packs['ThreePack'] == 7){
+            $logics->ActionThirteen();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 4 && $packs['ThreePack'] == 5){
+            $logics->ActionSixteen();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 4 && $packs['ThreePack'] == 3){
+            $logics->ActionTwelve();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 4 && $packs['ThreePack'] == 2){
+            $logics->ActionThirteen();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 4 && $packs['ThreePack'] == 1){
+            $logics->ActionTen();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 4 && $packs['ThreePack'] == 0){
+            $logics->ActionEleven();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 4 && $packs['ThreePack'] == 6){
+            $logics->ActionSixteen();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 4 && $packs['ThreePack'] == 4){
+            $logics->ActionFifteen();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 4 && $packs['ThreePack'] == 3){
+            $logics->ActionEighteen();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 4 && $packs['ThreePack'] == 2){
+            $logics->ActionSeventeen();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 4 && $packs['ThreePack'] == 1){
+            $logics->ActionNineteen();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 4 && $packs['ThreePack'] == 0){
+            $logics->ActionFour();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 3 && $packs['ThreePack'] == 4){
+            $logics->ActionSeventeen();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 2 && $packs['ThreePack'] == 4){
+            $logics->ActionEighteen();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 1 && $packs['ThreePack'] == 4){
+            $logics->ActionNineteen();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 0 && $packs['ThreePack'] == 4){
+            $logics->ActionFour();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 3 && $packs['ThreePack'] == 6){
+            $logics->ActionSeventeen();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 2 && $packs['ThreePack'] == 6){
+            $logics->ActionEighteen();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 1 && $packs['ThreePack'] == 6){
+            $logics->ActionNineteen();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 0 && $packs['ThreePack'] == 6){
+            $logics->ActionFour();
+        }
     }
 }
 
