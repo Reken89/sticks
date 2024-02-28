@@ -3,6 +3,7 @@
 use App\Controllers\RoutesController;
 use App\Controllers\LogicsOneController;
 use App\Controllers\LogicsTwoController;
+use App\Controllers\LogicsThreeController;
 
 //Запускаем разбор адресной строки
 //Получаем нужное нам значение
@@ -31,6 +32,10 @@ if ($route[2] == "logics"){
     }  
     if($_SESSION['moves'] == 2){
         $address = new LogicsTwoController;
+        $address->SelectVariant();
+    }
+    if($_SESSION['moves'] == 3){
+        $address = new LogicsThreeController;
         $address->SelectVariant();
     }
 }

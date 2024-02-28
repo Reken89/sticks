@@ -52,7 +52,7 @@ class RoutesController extends BaseController
         if($checking){
             $game->UpdateSticks($sticks, $_POST['variant']);
             $game->CountMoves();
-        }      
+        }
 
     }
 }
