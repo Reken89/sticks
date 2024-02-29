@@ -64,8 +64,64 @@ class LogicsThreeModel
     public function ActionSeven()
     {
         $_SESSION['packs']['OnePack'] = 0;
-        $_SESSION['packs']['TwoPack'] = 4;
-        $_SESSION['packs']['ThreePack'] = 4;
+        $_SESSION['packs']['TwoPack'] = 3;
+        $_SESSION['packs']['ThreePack'] = 3;
+        //Выводим компьютер на победу!
+    }
+    
+    public function ActionEight()
+    {
+        $_SESSION['packs']['OnePack'] = 0;
+        $_SESSION['packs']['TwoPack'] = 2;
+        $_SESSION['packs']['ThreePack'] = 2;
+        //Выводим компьютер на победу!
+    }
+    
+    public function ActionNine()
+    {
+        $_SESSION['packs']['OnePack'] = 0;
+        $_SESSION['packs']['TwoPack'] = 1;
+        $_SESSION['packs']['ThreePack'] = 0;
+        //Победа компьютера!
+    }
+    
+    public function ActionTen()
+    {
+        $_SESSION['packs']['OnePack'] = 0;
+        $_SESSION['packs']['TwoPack'] = 0;
+        $_SESSION['packs']['ThreePack'] = 1;
+        //Победа компьютера!
+    }
+    
+    public function ActionEleven()
+    {
+        $_SESSION['packs']['OnePack'] = 2;
+        $_SESSION['packs']['TwoPack'] = 3;
+        $_SESSION['packs']['ThreePack'] = 1;
+        //Выводим компьютер на победу!
+    }
+    
+    public function ActionTwelve()
+    {
+        $_SESSION['packs']['OnePack'] = 2;
+        $_SESSION['packs']['TwoPack'] = 2;
+        $_SESSION['packs']['ThreePack'] = 0;
+        //Выводим компьютер на победу!
+    }
+    
+    public function ActionThirteen()
+    {
+        $_SESSION['packs']['OnePack'] = 2;
+        $_SESSION['packs']['TwoPack'] = 1;
+        $_SESSION['packs']['ThreePack'] = 3;
+        //Выводим компьютер на победу!
+    }
+    
+    public function ActionFourteen()
+    {
+        $_SESSION['packs']['OnePack'] = 2;
+        $_SESSION['packs']['TwoPack'] = 0;
+        $_SESSION['packs']['ThreePack'] = 2;
         //Выводим компьютер на победу!
     }
 }    
