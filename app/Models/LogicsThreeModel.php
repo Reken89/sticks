@@ -124,4 +124,12 @@ class LogicsThreeModel
         $_SESSION['packs']['ThreePack'] = 2;
         //Выводим компьютер на победу!
     }
+    
+    public function ActionFifteen()
+    {
+        $_SESSION['packs']['OnePack'] = 1;
+        $_SESSION['packs']['TwoPack'] = 3;
+        $_SESSION['packs']['ThreePack'] = 1;
+        //Проигрышная ситуация для компьютера
+    }
 }    

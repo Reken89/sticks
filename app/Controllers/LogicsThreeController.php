@@ -216,6 +216,54 @@ class LogicsThreeController extends BaseController
         if($packs['OnePack'] == 2 && $packs['TwoPack'] == 0 && $packs['ThreePack'] == 0){
             $logics->ActionFive();
         }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 1 && $packs['ThreePack'] == 3){
+            $logics->ActionFour();
+        }
+        
+        if($packs['OnePack'] == 0 && $packs['TwoPack'] == 1 && $packs['ThreePack'] == 3){
+            $logics->ActionNine();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 0 && $packs['ThreePack'] == 3){
+            $logics->ActionFourteen();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 1 && $packs['ThreePack'] == 2){
+            $logics->ActionFourteen();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 0 && $packs['ThreePack'] == 2){
+            $logics->ActionFive();
+        }
+        
+        if($packs['OnePack'] == 0 && $packs['TwoPack'] == 0 && $packs['ThreePack'] == 2){
+            $logics->ActionTen();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 0 && $packs['ThreePack'] == 1){
+            $logics->ActionTen();
+        }
+        
+        if($packs['OnePack'] == 2 && $packs['TwoPack'] == 0 && $packs['ThreePack'] == 0){
+            $logics->ActionFive();
+        }
+        
+        if($packs['OnePack'] == 0 && $packs['TwoPack'] == 3 && $packs['ThreePack'] == 4){
+            $logics->ActionSeven();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 3 && $packs['ThreePack'] == 3){
+            $logics->ActionSeven();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 3 && $packs['ThreePack'] == 2){
+            $logics->ActionFifteen();
+        }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 3 && $packs['ThreePack'] == 0){
+            $logics->ActionFive();
+        }
     }
 }    
 
