@@ -34,7 +34,7 @@ if ($route[2] == "logics"){
         $address = new LogicsTwoController;
         $address->SelectVariant();
     }
-    if($_SESSION['moves'] == 3){
+    if($_SESSION['moves'] == 3 || $_SESSION['moves'] == 4 || $_SESSION['moves'] == 5){
         $address = new LogicsThreeController;
         $address->SelectVariant();
     }
