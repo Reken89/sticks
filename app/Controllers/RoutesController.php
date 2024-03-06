@@ -55,5 +55,17 @@ class RoutesController extends BaseController
         }
 
     }
+    
+    /**
+     * Перезапускаем игру
+     *
+     * @param 
+     * @return render()
+     */
+    public function Restart()
+    {
+        $game = new GameModel;
+        $_SESSION['packs'] = $game->Restart();
+    }
 }
 

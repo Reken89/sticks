@@ -15,6 +15,7 @@
         </style>
         <div>
             <div class="header-content">
+                <h1 class="text-center">Игра 3|5|7</h1>
                 <div class="countdown" id="countdown">
                     <div class="container">
                         <div class="row">
@@ -59,10 +60,21 @@
                                         }
                                     ?>
                                 </form>
-                            </div>                           
+                            </div>
+                            <div class="countdown-item col-sm-3 col-xs-3">
+                                <span class="input-group-btn">
+                                        <button id="restart" type="button" class="btn">Начать заново!</button>
+                                    </span>
+                            </div>
                         </div>                    	
                     </div>
                 </div>
+                </br>
+                <p class="text-center copyright"><b>Правила игры: 
+                    </br>1) В окошко над пачкой, введите количество палочек, которые хотите взять
+                    </br>2) Нажмите кнопку "Нажать", дождитесь ответного хода компьютера
+                    </br>3) Брать палочки можно только из одной пачки! 
+                    </br>4) Кто забрал последнюю палочку, тот проиграл! </b></p>
                 <footer>
                 </footer>
             </div>

@@ -92,5 +92,17 @@
             }
             let timeout = setTimeout(logics, 800);
         })
+        
+        //Выполняем действие, при нажатии на кнопку
+        $(document).on('click', '#restart', function(){           
+            $.ajax({
+                url:"/sticks/restart",  
+                method:"post",
+                success:function(data){
+                    //alert(data);
+                    fetch_data();
+                } 
+            }) 
+        })
     });
 </script>

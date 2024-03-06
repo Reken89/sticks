@@ -22,6 +22,26 @@ class GameModel
     }
     
     /**
+     * Перезапускаем игру
+     * Возвращаем все палочки
+     * Обнуляем ходы игрока
+     *
+     * @param 
+     * @return array
+     */
+    public function Restart(): array
+    {
+        $packs = [
+            'OnePack'   => 3,
+            'TwoPack'   => 5,
+            'ThreePack' => 7,
+        ];
+        
+        $_SESSION['moves'] = 0;
+        return $packs;    
+    }
+    
+    /**
      * Подсчитываем количество 
      * ходов игрока
      *

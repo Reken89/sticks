@@ -39,3 +39,8 @@ if ($route[2] == "logics"){
         $address->SelectVariant();
     }
 }
+
+if ($route[2] == "restart"){
+    $address = new RoutesController;
+    $address->Restart();
+}
