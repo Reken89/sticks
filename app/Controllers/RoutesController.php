@@ -8,7 +8,7 @@ use App\Models\GameModel;
 class RoutesController extends BaseController
 {
     private $page = "/views/main.html";
-    private $content = "/views/MainBack.php";
+    private $content = "/views/sample.php";
     
     /**
      * Показываем главную страницу в представлении

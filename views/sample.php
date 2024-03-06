@@ -10,72 +10,64 @@
     </head>
 
     <body id="home">
+        <style>
+            body { background: url(../sticks/assets/img/green.jpg); }              
+        </style>
         <div>
             <div class="header-content">
                 <div class="countdown" id="countdown">
                     <div class="container">
                         <div class="row">
                             <div class="countdown-item col-sm-3 col-xs-3">
-                                <form>
-                                    <img src="assets/img/st.jpg" />
-                                    <img src="assets/img/st.jpg" />
-                                    <img src="assets/img/st.jpg" />
-                                    </br>
+                                <form id="FormOne" method="post">
+                                    <input type='hidden' name='variant' value='one'>
                                     <input type="number" name="sticks">
                                     <span class="input-group-btn">
                                         <button id="ButtonOne" type="button" class="btn">Нажать!</button>
                                     </span>
+                                    <?php
+                                        for ($a = 1; $a <= $_SESSION['packs']['OnePack']; $a++){
+                                            ?> <img src="assets/img/st.jpg" /> <?php
+                                        }
+                                    ?>
                                 </form>
-                                <div class="countdown-label">Первая</div>
                             </div>
-
                             <div class="countdown-item col-sm-3 col-xs-3">
-                                <form>
-                                    <img src="assets/img/st.jpg" />
-                                    <img src="assets/img/st.jpg" />
-                                    <img src="assets/img/st.jpg" />
-                                    <img src="assets/img/st.jpg" />
-                                    <img src="assets/img/st.jpg" />
-                                    </br>
+                                <form id="FormTwo" method="post">
+                                    <input type='hidden' name='variant' value='two'>
                                     <input type="number" name="sticks">
                                     <span class="input-group-btn">
-                                        <button name="submit" type="submit" class="btn">Нажать!</button>
+                                        <button id="ButtonTwo" type="button" class="btn">Нажать!</button>
                                     </span>
+                                    <?php
+                                        for ($a = 1; $a <= $_SESSION['packs']['TwoPack']; $a++){
+                                            ?> <img src="assets/img/st.jpg" /> <?php
+                                        }
+                                    ?>
                                 </form>
-                                <div class="countdown-label">Вторая</div>
                             </div>
-
                             <div class="countdown-item col-sm-3 col-xs-3">
-                                <form>
-                                    <img src="assets/img/st.jpg" />
-                                    <img src="assets/img/st.jpg" />
-                                    <img src="assets/img/st.jpg" />
-                                    <img src="assets/img/st.jpg" />
-                                    <img src="assets/img/st.jpg" />
-                                    <img src="assets/img/st.jpg" />
-                                    <img src="assets/img/st.jpg" />
-                                    </br>
+                                <form id="FormThree" method="post">
+                                    <input type='hidden' name='variant' value='three'>
                                     <input type="number" name="sticks">
                                     <span class="input-group-btn">
-                                        <button name="submit" type="submit" class="btn">Нажать!</button>
+                                        <button id="ButtonThree" type="button" class="btn">Нажать!</button>
                                     </span>
+                                    <?php
+                                        for ($a = 1; $a <= $_SESSION['packs']['ThreePack']; $a++){
+                                            ?> <img src="assets/img/st.jpg" /> <?php
+                                        }
+                                    ?>
                                 </form>
-                                <div class="countdown-label">Третья</div>
-                            </div>
-
-                            
-                        </div>
-                    	
+                            </div>                           
+                        </div>                    	
                     </div>
                 </div>
                 <footer>
-                    <p class="text-center copyright">&copy; LowPoly 2014. Designed by <a href="http://www.angelostudio.net" target="_blank">Angelo Studio</a>.<br>
-                    </p>
                 </footer>
             </div>
         </div>
 
-        <script type="text/javascript" src="assets/js/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
         <script type="text/javascript" src="assets/js/custom.js"></script>
         <script type="text/javascript" src="assets/js/ga.js"></script>
