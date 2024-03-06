@@ -388,6 +388,18 @@ class LogicsThreeController extends BaseController
         if($packs['OnePack'] == 1 && $packs['TwoPack'] == 1 && $packs['ThreePack'] == 1){
             $logics->ActionSixteen();
         }
+        
+        if($packs['OnePack'] == 1 && $packs['TwoPack'] == 0 && $packs['ThreePack'] == 0){
+            $logics->ActionSeventeen();
+        }
+        
+        if($packs['OnePack'] == 0 && $packs['TwoPack'] == 1 && $packs['ThreePack'] == 0){
+            $logics->ActionSeventeen();
+        }
+        
+        if($packs['OnePack'] == 0 && $packs['TwoPack'] == 0 && $packs['ThreePack'] == 1){
+            $logics->ActionSeventeen();
+        }
     }
 }    
 

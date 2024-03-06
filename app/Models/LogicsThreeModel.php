@@ -140,4 +140,12 @@ class LogicsThreeModel
         $_SESSION['packs']['ThreePack'] = 0;
         //Проигрышная ситуация для компьютера
     }
+    
+    public function ActionSeventeen()
+    {
+        $_SESSION['packs']['OnePack'] = 0;
+        $_SESSION['packs']['TwoPack'] = 0;
+        $_SESSION['packs']['ThreePack'] = 0;
+        //Компьютер проиграл
+    }
 }    
